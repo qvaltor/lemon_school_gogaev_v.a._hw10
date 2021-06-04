@@ -1,0 +1,121 @@
+@import url('');
+/*css reset*/
+			html, body, div, span, applet, object, iframe,
+			h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+			a, abbr, acronym, address, big, cite, code,
+			del, dfn, em, img, ins, kbd, q, s, samp,
+			small, strike, strong, sub, sup, tt, var,
+			b, u, i, center,
+			dl, dt, dd, ol, ul, li,
+			fieldset, form, label, legend,
+			table, caption, tbody, tfoot, thead, tr, th, td,
+			article, aside, canvas, details, embed, 
+			figure, figcaption, footer, header, hgroup, 
+			menu, nav, output, ruby, section, summary,
+			time, mark, audio, video {
+				margin: 0;
+				padding: 0;
+				border: 0;
+				font-size: 100%;
+				font: inherit;
+				vertical-align: baseline;
+			}
+			/* HTML5 display-role reset for older browsers */
+			article, aside, details, figcaption, figure, 
+			footer, header, hgroup, menu, nav, section {
+				display: block;
+			}
+			body {
+				line-height: 1;
+			}
+			ol, ul {
+				list-style: none;
+			}
+			blockquote, q {
+				quotes: none;
+			}
+			blockquote:before, blockquote:after,
+			q:before, q:after {
+				content: '';
+				content: none;
+			}
+			table {
+				border-collapse: collapse;
+				border-spacing: 0;
+			}
+
+
+
+.wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 1100px;
+    flex-wrap: wrap;
+    margin: 0 auto;
+}
+
+.menu {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font: inherit;
+}
+
+ul{
+	text-align: center;
+	font-size: 0;
+}
+
+ul li{
+	display: inline-block;
+	background: rgb(225, 92, 243);
+	box-shadow: 0 0 10px brown;
+	border-radius: 20px;
+	font-size: 18px;
+}
+
+ul li a{
+	text-decoration: none;
+	color: rgb(0, 66, 128);
+	text-transform: uppercase;
+	padding: 15px 25px;
+	display: block;
+}
+
+.img {
+	position: relative;
+}
+
+.text {
+	color: blue;
+	font-size: larger;
+	font-weight: bold;
+	position: absolute;
+	z-index: 10;
+	top: 50%;
+	left: 30%;
+}
+
+.white {
+	position: absolute;
+	background-color: rgba(255, 255, 255, 0.699);
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+}
+
+li:hover {
+	background-color: aqua;
+}
+
+.white:hover {
+	background-color: rgba(150, 179, 149, 0.507);
+}
+
+.text+.white:hover {
+	color: brown;
+	font-size: larger;
+	font-weight: bold;
+}
